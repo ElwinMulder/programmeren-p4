@@ -1,0 +1,11 @@
+CREATE DATABASE IF NOT EXISTS case1
+CHARACTER SET utf8mb4
+COLLATE utf8mb4_general_ci;
+
+USE case1;
+
+CREATE TABLE IF NOT EXISTS ziekmelding (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    docent_naam VARCHAR(100) NOT NULL,
+    datum VARCHAR(255) NOT NULL
+);
